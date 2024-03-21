@@ -1,6 +1,6 @@
 ![On the important of POSIX compliance](./assets/posix-rules.png)
 
-It's time I lay claim to my corner of the internet:
+I have laid claim to my corner of the Internet:
 [michaelfortunato.dev](https://michaelfortunato.dev)
 
 <!--
