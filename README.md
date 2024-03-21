@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+![On the important of POSIX compliance](./assets/posix-rules.png)
+
 <!--
 **michaelfortunato/michaelfortunato** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
