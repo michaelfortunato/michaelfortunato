@@ -3,9 +3,6 @@
 I have laid claim to my corner of the Internet:
 [michaelfortunato.dev](https://michaelfortunato.dev)
 
-I'll be working on the site this weekend.
-Work will be happening here: <https://personal-website-git-dev-michael-fortunatos-projects.vercel.app/>
-
 <!--
 **michaelfortunato/michaelfortunato** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
