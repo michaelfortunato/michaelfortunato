@@ -1,5 +1,7 @@
 ![On the important of POSIX compliance](./assets/posix-rules.png)
 
+I am a developer in the Kernel group at InterSystems, a database company.
+
 I have laid claim to my corner of the Internet:
 [michaelfortunato.dev](https://michaelfortunato.dev)
 
