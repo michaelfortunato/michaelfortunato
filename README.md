@@ -1,6 +1,6 @@
 ![On the important of POSIX compliance](./assets/posix-rules.png)
 
-I am a developer in the Kernel group at InterSystems, a database company.
+I am an incoming student [here](https://cs.uchicago.edu/mpcs-pre-doctoral-program/).
 
 I have laid claim to my corner of the Internet:
 [michaelfortunato.dev](https://michaelfortunato.dev)
