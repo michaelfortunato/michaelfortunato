@@ -1,0 +1,9 @@
+# Ignore nix result folder
+result
+
+# Ignore intermediate/obj directory types
+obj
+aux
+
+# Ignore bin/install/target directory types
+bin

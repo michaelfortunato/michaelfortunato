@@ -1,0 +1,156 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage{hyperref}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+% To reset \renewcommand*{\thefootnote}{\arabic{footnote}}
+% \setcounter{footnote}{0}
+% Taken from: https://tex.stackexchange.com/questions/826/symbols-instead-of-numbers-as-footnote-markers
+%
+
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge {Michael Newman Fortunato}}\\
+	Chicago, IL $\cdot$ \href{https://www.michaelfortunato.dev}{michaelfortunato.dev} $\cdot$  michael.n.fortunato@gmail.com $\cdot$ +1 (917) 373-3628 \end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{University of Chicago}\hfill Chicago, IL\\
+B.S. Mathematics, \textit{Major GPA: 3.51/4.00},\textit{GPA: 3.30/4.00} \hfill Sep 2016 - Jun 2020\\
+M.S. In Computer Science (Pre-Doctoral Track)\footnote{As part of the program, all courses MUST be PhD (CMSC 300) level courses, \textit{not} masters level courses (MPSC)}, \textit{GPA: 3.85/4.00} \hfill Sep 2024 - Dec 2025 (expected)\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{InterSystems} \hfill Cambridge, MA\\
+\textit{Senior Systems Developer - Kernel Group} \hfill June 2023 - July 2024\\
+\begin{itemize} \itemsep 1pt
+	\item Due to veritable performance in our company's healthcare department, was transferred to become a member of company's "Kernel"/core team; the group of 12 developers responsible for architecting, implementing, and researching the \href{https://www.intersystems.com/data-platform/}{IRIS database}, which is our company's core technology and is the database powering companies such as Epic Systems and Morgan Stanley.
+	\item Tasked with developing and improving the performance of ObjectScript, a strongly typed byte-code language (most similar to Java) that is executed within the IRIS run time. Responsibilities include:
+	      \begin{itemize}
+		      \item Improving the speed and modularity of the ObjectScript lexer and parser
+		      \item Conceiving of optimizing passes that the ObjectScript compiler can perform
+		      \item Improving the speed of the ObjectScript runtime/virtual machine
+	      \end{itemize}
+	\item Tasked with writing a secure and performant SSH daemon for the IRIS database, which would allow users to directly ssh into our database and runtime.
+	\item Programming in C, assembly, and Rust.
+\end{itemize}
+\textit{Senior Developer} \hfill July 2020 - May 2023\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Conceived of, architected, and built the Data Profiling Tool,
+	      an enterprise grade application for analyzing millions of HL7v2 messages, including user authentication, multi-threading and complex scheduling features.
+	\item Put on special 1-person team to research the cost of HealthShare\textquotesingle{}s
+	      implementation in order to propose a software solution and build that solution.
+	      The Data Profiling Tool was derived as a result of this work.
+	\item Mentored 7 junior developers as part of InterSystem's CDP/SDP early career program. Two of the developers are now the technical leads of the Data Profiling Tool.
+\end{itemize}
+\textbf{Yale University} \hfill New Haven, CT\\
+\textit{Undergraduate Research Assistant to John Lafferty, The John C. Malone Professor of Statistics} \hfill June 2019 - September 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Helped design and build new techniques for estimating joint distributions on mixed data (discrete and continuous).
+	\item Helped theorize and implement a method that uses Score Matching (Siwei Lyu, 2009) for joint density estimation, and a second method that uses Monotonic Neural Density Estimation
+	      (Pawel Chilinski \& Ricardo Silva 2018) for estimating the conditionals and a Gaussian Copula for linking.
+	\item Demonstrated our work by inferencing the estimated joint distribution to generate synethetic data.
+\end{itemize}
+\textbf{University of Chicago Booth School of Business} \hfill Chicago, IL\\
+\textit{Head Undergraduate Research Assistant to Professor William Cong \& Tengyuan Liang} \hfill January 2018 - June 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Head undergraduate researcher for a team that developed an influential algorithm called \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3307057}{Textual Factors} (Cong, Liang, Lin 2019), resulting in a published paper with graduate-level authors.
+	\item Important contributor to the development and implementation of the algorithm, which uses natural language processing to measure the semantics of large corpus of financial articles (30GB), and then uses statistics to associate that measurement with a given share price.
+	\item Received honorable mention for significant contributions to the project in the published paper, despite not being listed as an author due to graduate author focus.
+\end{itemize}
+
+%==== Awards ====%
+\header{Awards}
+\textbf{Dean’s List} \hfill University of Chicago (2019)\\
+\textbf{Data Profiling Tool} \hfill InterSystems (July 2023) \\
+\textit{Voted "Most Exciting and Likely To Use Technology" at Global Summit by InterSystems Customers}
+
+
+%==== Skills ====%
+\header{Courses}
+$\cdot$ CMSC 33300, Advanced Operating Systems, A
+$\cdot$ STAT 28000, Optimization, A
+$\cdot$ STAT 24500, Statistical Theory II, A \\
+$\cdot$ MATH 28100, Introduction to Complexity Theory, A
+$\cdot$ CMSC 27200, Algorithms, A
+$\cdot$ MATH 25500, Basic Algebra II, A
+$\cdot$ CMSC 35300, Math Foundations of Machine Learning, A-
+\end{document}
