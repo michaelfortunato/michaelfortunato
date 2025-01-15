@@ -12,14 +12,14 @@
         let pkgs = import nixpkgs { system = system; };
         in {
           default = pkgs.stdenv.mkDerivation {
-            name = "Resume.pdf";
+            name = "Latex Book";
             src = ./.;
             buildInputs = [ pkgs.texliveFull ];
             buildPhase = ''
-              make OUT_DIR=$out
+              make INSTALL_DIR=$out
             '';
             installPhase = ''
-              make install OUT_DIR=$out
+              make install INSTALL_DIR=$out
             '';
 
           };

@@ -1,9 +1,11 @@
-# Ignore nix result folder
+# Ignore nix result folder, sometimes I called it install
 result
+install
+# Ignore target (build) folder
+target/
 
 # Ignore intermediate/obj directory types
 obj
 aux
-
-# Ignore bin/install/target directory types
+# Ignore bin/target directory types
 bin

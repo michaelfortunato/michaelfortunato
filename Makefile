@@ -1,30 +1,43 @@
 # This Makefile is to run commands. While justfiles are better purposed
 # It is unlikely Make will go away and it works well enough for my needs.
 
-OUT_DIR = bin
-FILE_NAME = Resume
-AUX_DIR := obj
+SRC_DIR := .
+OBJ_DIR := target/obj
+BIN_DIR := target/bin
+INSTALL_DIR := .
 
-.PHONY: all
-all: build
+SRC := $(shell find $(SRC_DIR) -maxdepth 1 -name '*.tex')
+BIN := $(shell find $(BIN_DIR) -maxdepth 1 -name '*.pdf')
+OBJ := $(shell find $(OBJ_DIR) -maxdepth 1 -name '*')
+
 
 .PHONY: build
-build:
-	latexmk -interaction=nonstopmode -aux-directory=$(AUX_DIR) -pdf -synctex=true $(FILE_NAME).tex
+build: _makedirs
+	latexmk -interaction=nonstopmode -aux-directory=$(OBJ_DIR) -output-directory=$(BIN_DIR) -pdf -synctex=true $(SRC)
 
-.PHONY: install
-install: all
-	mkdir -p $(OUT_DIR)
-	cp $(FILE_NAME).pdf $(OUT_DIR)
 
-.PHONY: open
-open: install
-	sioyek --new-window "$(OUT_DIR)/$(FILE_NAME).pdf" &
+open: build
+	sioyek --new-window "$(FILE)" &
 
 .PHONY: refresh
 refresh: install
 	sioyek --execute-command reload
 
+.PHONY: makedirs
+_makedirs:
+	mkdir -p $(OBJ_DIR) $(BIN_DIR) $(INSTALL_DIR)
+
+
 .PHONY: clean
 clean:
-	rm -rf $(AUX_DIR)
+	rm -rf $(BIN) $(OBJ)
+
+## Helper scripts
+
+.PHONY: install
+install: build
+	cp -r $(BIN_DIR)/* $(INSTALL_DIR)
+
+.PHONY: buildanew
+buildanew: clean bulid
+
