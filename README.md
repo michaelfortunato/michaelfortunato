@@ -2,8 +2,8 @@
 
 I am a student [here](https://cs.uchicago.edu/mpcs-pre-doctoral-program/).
 
-I am interested in Using Tools From Group Theory and Topology
-to design new NNs that are actually useful.
+I am interested in using tools from Group Theory and Topology
+to design new NNs that are accessible.
 
 I have laid claim to my corner of the Internet:
 [michaelfortunato.dev](https://michaelfortunato.dev)
