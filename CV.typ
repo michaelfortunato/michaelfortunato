@@ -41,7 +41,7 @@
   dates: dates-helper(start-date: "Sep 2024", end-date: "Dec 2025 (Expected)"),
   degree: "Masters of Science, Computer Science",
 )
-- _ Cumulative GPA: 3.95/4.00_
+- _ Cumulative GPA: 3.92/4.00_
 - _Pre-Doctoral Program_ #footnote[Research-track CS masters meant to prepare
     students for a PhD. As part of the program, _all_ courses are PhD (CMSC
     300) level courses, _not_ masters-level courses (MPSC). *Highly selective*
