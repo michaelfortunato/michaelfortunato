@@ -35,15 +35,17 @@
 #edu(
   institution: "The University of Chicago",
   location: "Chicago, IL",
-  dates: dates-helper(start-date: "Sep 2024", end-date: "Dec 2025 (Expected)"),
+  dates: dates-helper(start-date: "Sep 2024", end-date: "Dec 2025"),
   degree: "Masters of Science, Computer Science",
 )
-- _ Cumulative GPA: 3.95/4.00_
-- _Pre-Doctoral Program_ #footnote[*Highly selective* program (in 2024, 120
-    regular admissions, 4 pre-doctoral admissions) meant to prepare students
-    for a PhD. As part of the program, _all_ courses are PhD (CMSC 300) level
-    courses, _not_ masters-level courses (MPSC).
-    https://masters.cs.uchicago.edu/academics/pre-doctoral-ms-computer-science]
+- _ Cumulative GPA: 3.925/4.00_
+- _Pre-Doctoral Program_ #footnote[Research-track CS masters meant to prepare
+    students for a PhD. As part of the program, _all_ courses are PhD (CMSC
+    300) level courses, _not_ masters-level courses (MPSC). *Highly selective*
+    program (in 2024, 120 regular master admissions, 4 pre-doctoral
+    admissions). See
+    https://masters.cs.uchicago.edu/academics/pre-doctoral-ms-computer-science
+    for more info.]
 
 
 #edu(
@@ -71,8 +73,30 @@
 }
 
 == Work Experience <subsec:Work-Experience>
+
 #work(
-  title: [_ Senior Systems Developer - Kernel Group _],
+  company: "University of California, San Diego",
+  title: [Research Assistant to Professor Rose Yu],
+  location: "La Jolla, CA",
+  dates: dates-helper(start-date: "June 2025", end-date: "February 2026"),
+)
+- Created *SymD*, a new architecture (and mathematical formalization) of
+  discovering local (region-specific) equivariances of function between vectors
+  spaces under finite group.
+- Designed a differentiable training approach using straight-through estimation
+  to learn both where a symmetry applies (region/mask) and which group action
+  explains it.
+- Formalized “local symmetry” as a representation-theoretic decomposition: a
+  nontrivial group action on an active subspace plus trivial action on the
+  complement; used this to derive model constraints and training objectives.
+- Implemented experimental pipeline and evaluated against prior symmetry
+  discovery baselines (including Lie-group approaches and methods requiring
+  predefined regions); prepared an internal preprint draft (“Regional Symmetry
+  Discovery with Finite Groups”, Feb 2026; available on request).
+
+
+#work(
+  title: [ Senior Systems Developer - Kernel Group ],
   location: "Cambridge, MA",
   company: "InterSystems",
   dates: dates-helper(start-date: "July 2023", end-date: "July 2024"),
@@ -106,8 +130,8 @@
 - Wrote in C, assembly, and Rust
 
 #generic-one-by-two(
-  left: [_Senior Developer_ #footnote([Promoted from Developer to Senior
-      Developer April 2022])],
+  left: [Senior Developer #footnote([Promoted from Developer to Senior
+      Developer, April 2022.])],
   right: dates-helper(start-date: "July 2020", end-date: "July 2023"),
 )
 - Conceived of, architected, and built the Data Profiling Tool, an enterprise
@@ -135,7 +159,7 @@
 
 #work(
   company: "Yale Univeristy",
-  title: [_Undergraduate Research Assistant to Professor John Lafferty_],
+  title: [Research Assistant to Professor John Lafferty],
   dates: dates-helper(end-date: "September 2019", start-date: "June 2019"),
   location: [New Haven, CT],
 )
@@ -187,16 +211,15 @@
 
 == Courses <subsec:Courses>
 
+- CMSC 31150, Mathematical Toolkit, A
 - CMSC 35410, Machine Learning on Graph, Groups, and Manifolds (Risi Kondor),
   A-
-- CMSC 35400, Deep Learning in 3D (Rana Hanocka), A-
+- CMSC 35400, Deep Learning in 3D (Rana Hanocka), A
 - CMSC 35300, Mathematical Foundations of Machine Learning, A-
+- CMSC 31150, Introduction to Computer Security, A
 - CMSC 33300, Advanced Operating Systems, A
 - STAT 28000, Optimization, A,
 - STAT 24500, Statistical Theorey II, A
 - MATH 28100, Introduction To Complexity Theory, A
 - CMSC 27200, Algorithms, A
 - MATH 25500, Basic Algebra II, A
-
-
-

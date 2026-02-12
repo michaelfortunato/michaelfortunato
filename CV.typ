@@ -38,10 +38,10 @@
 #edu(
   institution: "The University of Chicago",
   location: "Chicago, IL",
-  dates: dates-helper(start-date: "Sep 2024", end-date: "Dec 2025 (Expected)"),
+  dates: dates-helper(start-date: "Sep 2024", end-date: "Dec 2025"),
   degree: "Masters of Science, Computer Science",
 )
-- _ Cumulative GPA: 3.92/4.00_
+- _ Cumulative GPA: 3.925/4.00_
 - _Pre-Doctoral Program_ #footnote[Research-track CS masters meant to prepare
     students for a PhD. As part of the program, _all_ courses are PhD (CMSC
     300) level courses, _not_ masters-level courses (MPSC). *Highly selective*
@@ -66,20 +66,21 @@
   company: "University of California, San Diego",
   title: [Research Assistant to Professor Rose Yu],
   location: "La Jolla, CA",
-  dates: dates-helper(start-date: "June 2025", end-date: "Present"),
+  dates: dates-helper(start-date: "June 2025", end-date: "February 2026"),
 )
-- First author of upcoming paper _Local Symmetry Discovery With Finite Groups_
-  - Please contact me to view preprint (December 2025)
-  - Plan to submit to ICML (2026)
+- First author of private preprint _Regional Symmetry Discovery With Finite
+  Groups_
+  - Please contact me to view preprint (Febuary 2026)
+  - Plan to submit to Neurips (2026)
 - Paper introduces new neural network (SymD) that learn *local* symmetry (group
   equivariances) of functions between vector spaces.
   - Learning is unsupervised and end-to-end differentiable, made possible by a
     novel architecture that uses what we call "sequential" straight through
     estimation @bengioEstimatingPropagatingGradients2013.
-- Formalized the notion of local symmetry of functions between vector spaces as
-  group representations that decompose into a direct sum of the trivial
-  representation on the complement space and any sub-representation on the
-  region.
+- Formalized the notion of local symmetry (also known as class pose
+  composition) of functions between vector spaces as group representations that
+  decompose into a direct sum of the trivial representation on the complement
+  space and any sub-representation on the region.
 - Demonstrated order-of-magnitude efficiency improvements--while improving
   accuracy--on benchmark set by the current state of the art
   @karjolUnifiedFrameworkDiscovering2024.
