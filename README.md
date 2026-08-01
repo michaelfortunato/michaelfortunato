@@ -1,6 +1,6 @@
 ![On the important of POSIX compliance](./assets/posix-rules.png)
 
-I am a student [here](https://cs.uchicago.edu/mpcs-pre-doctoral-program/).
+I was a student [here](https://cs.uchicago.edu/mpcs-pre-doctoral-program/).
 
 I am interested in using tools from Group Theory and Topology
 to design new NNs that are accessible.
